@@ -1,0 +1,26 @@
+/* Colours */
+:root{
+  --Rangi-Green: #C6D728;
+  --Rangi-Grey: #494949;
+  --Rangi-Dark-Grey: #292929;
+  --Rangi-White: #EEEEEE;
+}
+
+ /* FONTS */
+ :root{
+  --Mada-1: 64px;
+  --Mada-2: 48px;
+  --Mada-3: 36px;
+  --Mada-4: 28px;
+  --Mada-5: 22px;
+  --Mada-6: 18px;
+
+  --Aya-1: 18px;
+  --Aya-2: 14px;
+  --Aya-3: 12px;
+ }
+
+ *{
+  padding: 0;
+  margin: 0;
+ }
