@@ -5,9 +5,19 @@ import Navbar from './components/Navbar.vue';
 
 <template>
   <header>
-    <Navbar/>
+    <nav>
+        <div class="logo"></div>
+        <div class="links">
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/services">Services</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
+        </div>
+    </nav>
   </header>
-  <main></main>
+  <main>
+    <RouterView/>
+  </main>
 </template>
 
 <style scoped>
