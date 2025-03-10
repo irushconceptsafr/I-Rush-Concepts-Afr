@@ -5,7 +5,8 @@ import Navbar from './components/Navbar.vue';
 
 <template>
   <header>
-    <nav>
+    <Navbar />
+    <!-- <nav>
         <div class="logo"></div>
         <div class="links">
             <RouterLink to="/">Home</RouterLink>
@@ -13,7 +14,7 @@ import Navbar from './components/Navbar.vue';
             <RouterLink to="/services">Services</RouterLink>
             <RouterLink to="/contact">Contact</RouterLink>
         </div>
-    </nav>
+    </nav> -->
   </header>
   <main>
     <RouterView/>
@@ -21,21 +22,29 @@ import Navbar from './components/Navbar.vue';
 </template>
 
 <style scoped>
-template{
+body{
   height: 100vh;
+  display: grid;
+  grid:
+  "header"1fr
+  "main"9fr
+  /1fr;
 }
 
 header{
-  position: fixed;
-  right: 0;
-  height: 100vh;
-  width: 80px;
-  border: 2px solid;
+  grid-area: header;
+  /* position: fixed; */
+  top: 0;
+  /* right: 0; */
+  height: 10vh;
+  width: 100vw;
+  /* border: 2px solid; */
 }
 
 main{
-  width: calc(100vw - 100px);
-  border: 2px solid #aaa;
-  height: 100vh;
+  grid-area: main;
+  /* width: calc(100vw - 100px); */
+  /* border: 2px solid #aaa; */
+  height: 90vh;
 }
 </style>
