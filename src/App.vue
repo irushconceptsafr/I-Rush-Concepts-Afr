@@ -33,7 +33,7 @@ body{
 
 header{
   grid-area: header;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   /* right: 0; */
   height: 10vh;
@@ -45,6 +45,7 @@ main{
   grid-area: main;
   /* width: calc(100vw - 100px); */
   /* border: 2px solid #aaa; */
+  margin-top: 10vh;
   height: 90vh;
 }
 </style>

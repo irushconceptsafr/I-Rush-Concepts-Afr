@@ -24,13 +24,38 @@ a:hover{
 
 h1{
   font-size: var(--Mada-1);
-  margin: auto 20px;
+  margin: 20px;
+}
+
+h2{
+  font-size: var(--Mada-2);
+  margin: 20px;
 }
 
 h3{
   font-size: var(--Mada-3);
-  margin: auto 20px;
+  margin: 20px;
 }
+
+h4{
+  font-size: var(--Mada-4);
+  margin: 20px;
+}
+
+h5{
+  font-size: var(--Mada-5);
+  margin: 20px;
+}
+
+h6{
+  font-size: var(--Mada-6);
+  margin: 20px;
+}
+
+p{
+  font-size: var(--Aya-1);
+}
+
 button{
   background: var(--Rangi-Green);
   box-shadow: 1px 1px 30px #fff;

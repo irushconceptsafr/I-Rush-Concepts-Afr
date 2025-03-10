@@ -26,11 +26,13 @@ nav{
     display: grid;
     grid: "logo nav"1fr
     / 5fr 5fr;
+    z-index: 1000;
 }
 
-/* .logo{
-    background: radial-gradient(#999, transparent);
-} */
+.logo{
+    background: linear-gradient(90deg, #494949, #494949, transparent);
+    border: 2px solid;
+}
 
 .logo span{
     position: relative;

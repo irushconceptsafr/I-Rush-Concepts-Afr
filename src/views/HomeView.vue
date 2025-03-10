@@ -16,6 +16,7 @@
                 <img src="../assets/I-Rush-Logo.svg" alt="">
             </span>
         </div>
+        <div class="glow"></div>
     </div>
 </template>
 
@@ -43,7 +44,7 @@
 .illustration span{
     border-radius: 50%;
     /* background: radial-gradient(#999, #99999999, #99999955, transparent 75%); */
-    background: radial-gradient(circle, #999999, #7b7b7b, #5e5e5e, #434343, #292929);
+    /* background: radial-gradient(circle, #999999, #7b7b7b, #5e5e5e, #434343, #292929); */
 }
 .illustration img{
     height: 400px;
@@ -65,5 +66,34 @@ button{
     padding: 16px 32px;
     border: none;
     border-radius: 12px;
+}
+
+.glow{
+    position: fixed;
+    right: 0;
+    transform: translateX(-30%);
+    z-index: -10;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(100px);
+    animation-name: pulsate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsate{
+    0%{filter: blur(100px);}
+    10%{filter: blur(120px);}
+    20%{filter: blur(140px);}
+    30%{filter: blur(160px);}
+    40%{filter: blur(180px);}
+    50%{filter: blur(200px);}
+    60%{filter: blur(180px);}
+    70%{filter: blur(160px);}
+    80%{filter: blur(140px);}
+    90%{filter: blur(120px);}
+    100%{filter: blur(100px);}
 }
 </style>
