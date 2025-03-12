@@ -31,7 +31,7 @@ nav{
 
 .logo{
     background: linear-gradient(90deg, #494949, #494949, transparent);
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
 .logo span{
