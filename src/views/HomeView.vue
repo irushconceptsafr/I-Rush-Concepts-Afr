@@ -1,15 +1,19 @@
 <template>
     <div class="HomePage">
         <div class="half text">
-            <h1>I-RUSH</h1>
-            <h1>CONCEPTS</h1>
-            <h1>AFR</h1>
+            <div class="major-heading">
+                <h1>I-RUSH</h1>
+                <h1>CONCEPTS</h1>
+                <h1>AFR</h1>
+            </div>
 
-            <h3>Your Story</h3>
-            <h3>Our Design</h3>
-            <h3>Africa's Pride</h3>
+            <div class="minor-heading">
+                <h3>Your Story</h3>
+                <h3>Our Design</h3>
+                <h3>Africa's Pride</h3>
 
-            <span><RouterLink to="/about"><button @click="">LET US TELL YOUR STORY</button></RouterLink></span>
+                <span><RouterLink to="/about"><button @click="">LET US TELL YOUR STORY</button></RouterLink></span>
+            </div>
         </div>
         <div class="half illustration">
             <span>
@@ -24,6 +28,7 @@
 .HomePage{
     display: flex;
     height: 100%;
+    width: 100%;
 }
 
 .half{
@@ -95,5 +100,39 @@ button{
     80%{filter: blur(140px);}
     90%{filter: blur(120px);}
     100%{filter: blur(100px);}
+}
+
+@media only screen and (max-width: 425px) {
+    html, body, .HomePage{
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .HomePage .half{
+        border: 2px solid;
+        width: 100%;
+    }
+
+    .major-heading{
+        height: 30%;
+        width: 100%;
+    }
+
+    .minor-heading{
+        height: 70%;
+        width: 100%;
+        background: #49494990;
+        backdrop-filter: blur(10px);
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+     h3{
+        font-size: 24px;
+     }
 }
 </style>
