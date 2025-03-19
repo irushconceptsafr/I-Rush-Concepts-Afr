@@ -123,4 +123,42 @@
     90%{filter: blur(120px);}
     100%{filter: blur(100px);}
 }
+
+@media only screen and (max-width: 425px) {
+    html, body, .HomePage{
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .HomePage .half{
+        border: 2px solid;
+        width: 100%;
+    }
+
+    .major-heading{
+        height: 30%;
+        width: 100%;
+    }
+
+    .minor-heading{
+        height: 70%;
+        width: 100%;
+        background: #49494990;
+        backdrop-filter: blur(10px);
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+     h3{
+        font-size: 24px;
+     }
+
+     p{
+        font-size: 18px;
+     }
+}
 </style>

@@ -32,6 +32,7 @@ body{
 }
 
 header{
+  z-index: 10;
   grid-area: header;
   position: fixed;
   top: 0;
