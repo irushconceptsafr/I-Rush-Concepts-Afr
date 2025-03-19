@@ -61,4 +61,22 @@ img{
 .links img{
     width: 40px;
 }
+
+@media only screen and (max-width: 425px) {
+    nav{
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 60px;
+        display:  flex;
+        justify-content: space-evenly;
+        background: linear-gradient(3600deg, #292929,#292929,#494949, transparent);
+        backdrop-filter: blur(5px);
+    }
+
+    nav img{
+        height: 40px;
+    }
+}
 </style>
