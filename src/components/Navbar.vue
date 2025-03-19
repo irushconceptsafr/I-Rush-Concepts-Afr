@@ -1,11 +1,11 @@
 <script setup>
 import {ref} from "vue";
 
-
+const screenSize = window.innerWidth
 </script>
 
 <template>
-    <nav>
+    <nav v-if="screenSize > 425">
         <div class="logo">
             <span>
                 <img src="../assets/I-Rush-Logo-Dark.svg" alt="">
@@ -17,6 +17,12 @@ import {ref} from "vue";
             <RouterLink to="/services">SERVICES</RouterLink>
             <RouterLink to="/contact">CONTACT</RouterLink>
         </div>
+    </nav>
+    <nav v-else>
+        <RouterLink to="/"><img src="./icons/Icon-Home.svg" alt=""></RouterLink>
+        <RouterLink to="/about"><img src="./icons/Icon-About.svg" alt=""></RouterLink>
+        <RouterLink to="/services"><img src="./icons/Icon-Service.svg" alt=""></RouterLink>
+        <RouterLink to="/contact"><img src="./icons/icon-phone.svg" alt=""></RouterLink>
     </nav>
 </template>
 
